@@ -49,9 +49,9 @@ transporter.sendMail(mailOptions, (error: Error | null) => {
     console.log(
       // @ts-ignore
       colors.inverse.green(`
- - - - - - - - - - - - - - - - - -
- | Email was successfully sent 🚀|
- - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - -
+| Email was successfully sent 🚀|
+- - - - - - - - - - - - - - - - -
 `)
     );
   }
