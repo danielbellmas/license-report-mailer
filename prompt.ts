@@ -20,4 +20,7 @@ if (TO_EMAILS) {
         process.kill(process.pid, 'SIGINT');
       }
     });
+} else {
+  console.log(colors.red('!!! No TO_EMAILS found in .env !!!'));
+  process.kill(process.pid, 'SIGINT');
 }
