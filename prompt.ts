@@ -1,7 +1,8 @@
 import inquirer from 'inquirer';
 import colors from 'colors/safe';
-require('dotenv').config();
+import { config } from 'dotenv';
 
+config();
 const { TO_EMAILS } = process.env;
 
 if (TO_EMAILS) {

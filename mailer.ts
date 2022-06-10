@@ -4,9 +4,9 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import { checkLicenses } from './utils/checkLicenses';
 import { CSV_FOLDER_PATH } from './utils/consts';
+import { config } from 'dotenv';
 
-require('dotenv').config();
-
+config();
 const { FROM_EMAIL, PASSWORD, TO_EMAILS } = process.env;
 
 const transporter = nodemailer.createTransport({
